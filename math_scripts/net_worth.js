@@ -4,3 +4,4 @@ let net_worth = assets - debt
 console.log(`
 Your net worth is $${net_worth}
     `)
+
