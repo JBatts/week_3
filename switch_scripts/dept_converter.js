@@ -19,4 +19,7 @@ switch (code) {
         break;
     case 20:
         department = "Customer Relations";
+        break;
+    default: 
+        department = "Please enter a valid department"
 }
