@@ -6,8 +6,8 @@
 //console.log(area)
 
 
-function area(width, height) {
-    return width * height
+function area(roomwidth, roomheight) {
+    return roomwidth * roomheight
 }
 
 console.log(area(10, 5))

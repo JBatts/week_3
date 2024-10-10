@@ -1,0 +1,35 @@
+<head>
+    <script src="area.js"></script>
+
+</head>
+
+<body>
+    <h1>Area Inputs</h1>
+    <label>
+        Width: <input type="number" min="1" value="12" id="roomwidth"> Feet
+    </label>
+    <br>
+    <label>
+        Height: <input type="number" min="1" value="12" id="roomheight"> Feet
+    </label>
+    <br>
+    <button id="calculate">Give Me the Result</button>
+    <p>
+        Result: <span id="output">?</span>
+    </p>
+</body>
+<script src="area.js"></script>
+<script>
+
+    const heightElement = document.getElementById("roomheight")
+    const widthElement = document.getElementById("roomwidth")
+
+    function onClick() {
+        const w = Number(heightElement.value);
+        const h = Number(widthElement.value);
+        const result = area(w, h)
+        output.innerText = `Width: ${w} x Height: ${h}  = ${result}`;
+    }
+    calculate.addEventListener("click", onClick);
+    
+</script>
